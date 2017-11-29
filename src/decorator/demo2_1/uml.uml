@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_BwpqQNS9EeeW18DAJ7TZoQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_B92_0NS9EeeW18DAJ7TZoQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_B17L0NS9EeeW18DAJ7TZoQ" name="decorator">
+    <packagedElement xmi:type="uml:Package" xmi:id="_B2LDcNS9EeeW18DAJ7TZoQ" name="demo2_1">
+      <packagedElement xmi:type="uml:Class" xmi:id="_B2jd8NS9EeeW18DAJ7TZoQ" name="GreenAppleDecorator">
+        <generalization xmi:id="_B7HN0NS9EeeW18DAJ7TZoQ" general="_B4afINS9EeeW18DAJ7TZoQ"/>
+        <ownedOperation xmi:id="_B7OikNS9EeeW18DAJ7TZoQ" name="run" visibility="public"/>
+        <ownedOperation xmi:id="_B7PJoNS9EeeW18DAJ7TZoQ" name="eatGreenApple" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_B4afINS9EeeW18DAJ7TZoQ" name="YangYangDecorator">
+        <generalization xmi:id="_B7QXwNS9EeeW18DAJ7TZoQ" general="_B4f-sNS9EeeW18DAJ7TZoQ"/>
+        <ownedAttribute xmi:id="_B7ZhsNS9EeeW18DAJ7TZoQ" name="yangyang" visibility="protected" type="_B4f-sNS9EeeW18DAJ7TZoQ" association="_B_hzwNS9EeeW18DAJ7TZoQ"/>
+        <ownedOperation xmi:id="_B7av0NS9EeeW18DAJ7TZoQ" name="run" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_B4dicNS9EeeW18DAJ7TZoQ" name="YellowAppleDecorator">
+        <generalization xmi:id="_B7b98NS9EeeW18DAJ7TZoQ" general="_B4afINS9EeeW18DAJ7TZoQ"/>
+        <ownedOperation xmi:id="_B7b98dS9EeeW18DAJ7TZoQ" name="run" visibility="public"/>
+        <ownedOperation xmi:id="_B7dMENS9EeeW18DAJ7TZoQ" name="eatYellowApple" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_B4ewkNS9EeeW18DAJ7TZoQ" name="Xiyangyang">
+        <generalization xmi:id="_B7dzINS9EeeW18DAJ7TZoQ" general="_B4f-sNS9EeeW18DAJ7TZoQ"/>
+        <ownedOperation xmi:id="_B7eaMNS9EeeW18DAJ7TZoQ" name="run" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_B4f-sNS9EeeW18DAJ7TZoQ" name="YangYang" isAbstract="true">
+        <ownedOperation xmi:id="_B7fBQNS9EeeW18DAJ7TZoQ" name="run" visibility="public" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_B4hM0NS9EeeW18DAJ7TZoQ" name="Client">
+        <ownedOperation xmi:id="_B941ANS9EeeW18DAJ7TZoQ" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_B941AdS9EeeW18DAJ7TZoQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B941AtS9EeeW18DAJ7TZoQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B941A9S9EeeW18DAJ7TZoQ"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_B4nTcNS9EeeW18DAJ7TZoQ" name="RedAppleDecorator">
+        <generalization xmi:id="_B96qMNS9EeeW18DAJ7TZoQ" general="_B4afINS9EeeW18DAJ7TZoQ"/>
+        <ownedOperation xmi:id="_B96qMdS9EeeW18DAJ7TZoQ" name="run" visibility="public"/>
+        <ownedOperation xmi:id="_B974UNS9EeeW18DAJ7TZoQ" name="eatRedApple" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_B_hzwNS9EeeW18DAJ7TZoQ" memberEnd="_B7ZhsNS9EeeW18DAJ7TZoQ _B_hzwdS9EeeW18DAJ7TZoQ">
+        <ownedEnd xmi:id="_B_hzwdS9EeeW18DAJ7TZoQ" name="YangYangDecorator" type="_B4afINS9EeeW18DAJ7TZoQ" association="_B_hzwNS9EeeW18DAJ7TZoQ"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_B6sXENS9EeeW18DAJ7TZoQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_B6s-INS9EeeW18DAJ7TZoQ" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_B66ZgNS9EeeW18DAJ7TZoQ" name="Random"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

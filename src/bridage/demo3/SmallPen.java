@@ -1,0 +1,11 @@
+package bridage.demo3;
+
+public class SmallPen extends Pen {
+
+	@Override
+	public void draw(String name) {
+		String penType = "Ğ¡ºÅÃ«±Ê»æÖÆ";
+		this.color.bepaint(penType, name);
+	}
+
+}

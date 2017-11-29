@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Omx6QL7nEeeIyu8Eg0I5sA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_OqDQsL7nEeeIyu8Eg0I5sA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Omx6Qb7nEeeIyu8Eg0I5sA" name="AdapterPattern">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Omx6Qr7nEeeIyu8Eg0I5sA" name="Client">
+      <ownedOperation xmi:id="_OqDQsb7nEeeIyu8Eg0I5sA" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_OqDQsr7nEeeIyu8Eg0I5sA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OqDQs77nEeeIyu8Eg0I5sA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OqDQtL7nEeeIyu8Eg0I5sA"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Omx6Q77nEeeIyu8Eg0I5sA" name="Line">
+      <ownedOperation xmi:id="_OqDQtb7nEeeIyu8Eg0I5sA" name="Draw" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Om7rQL7nEeeIyu8Eg0I5sA" name="Rectangle">
+      <ownedOperation xmi:id="_OqDQtr7nEeeIyu8Eg0I5sA" name="Draw" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Om7rQb7nEeeIyu8Eg0I5sA" name="Circle">
+      <ownedOperation xmi:id="_OqDQt77nEeeIyu8Eg0I5sA" name="Draw" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_Om7rQr7nEeeIyu8Eg0I5sA" name="DrawOperation">
+      <ownedOperation xmi:id="_OqDQuL7nEeeIyu8Eg0I5sA" name="Draw" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Om7rQ77nEeeIyu8Eg0I5sA" name="OperationAdapter" clientDependency="_OqDQub7nEeeIyu8Eg0I5sA">
+      <ownedAttribute xmi:id="_OqDQur7nEeeIyu8Eg0I5sA" name="adaptee" visibility="private" type="_Om7rRL7nEeeIyu8Eg0I5sA" association="_OwmkoL7nEeeIyu8Eg0I5sA"/>
+      <interfaceRealization xmi:id="_OqDQub7nEeeIyu8Eg0I5sA" name="DrawOperation" supplier="_Om7rQr7nEeeIyu8Eg0I5sA" client="_Om7rQ77nEeeIyu8Eg0I5sA" contract="_Om7rQr7nEeeIyu8Eg0I5sA"/>
+      <ownedOperation xmi:id="_OqDQu77nEeeIyu8Eg0I5sA" name="Draw" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Om7rRL7nEeeIyu8Eg0I5sA" name="Adaptee">
+      <ownedOperation xmi:id="_OqDQvL7nEeeIyu8Eg0I5sA" name="DrawAngle" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OwmkoL7nEeeIyu8Eg0I5sA" memberEnd="_OqDQur7nEeeIyu8Eg0I5sA _Owmkob7nEeeIyu8Eg0I5sA">
+      <ownedEnd xmi:id="_Owmkob7nEeeIyu8Eg0I5sA" name="OperationAdapter" type="_Om7rQ77nEeeIyu8Eg0I5sA" association="_OwmkoL7nEeeIyu8Eg0I5sA"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
