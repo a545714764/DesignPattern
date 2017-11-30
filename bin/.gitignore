@@ -1,4 +1,3 @@
-/decorator/
 /AbstractFactory/
 /BuilderPattern/
 /ChainOfResponsibility/
@@ -27,6 +26,7 @@
 /adapter/
 /bridage/
 /composite/
+/decorator/
 /des.txt
 /facade/
 /flyweight/
